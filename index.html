@@ -1,12 +1,165 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alm Brand</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 
+</head>
+<header>
+        <button class="burger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="menu.html">Låneansøgning</a></li>
+                <li><a href="kontakt.html">Kontakt os</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="Alm.Brand_logo_RGB_200x200px.jpg" alt="logo"></div>
+
+    </header>
 <body>
 
+
+     <div class="splash-container">
+        <picture>
+            <source media="(min-width: 1920px)" srcset="">
+
+            <source media="(min-width: 1536px)" srcset="">
+
+            <source media="(min-width: 1024px)" srcset="">
+
+            <source media="(min-width: 768px)" srcset="">
+
+            <source media="(min-width: 627px)" srcset="">
+
+            <source media="(min-width: 375px)" srcset="">
+
+            <img src="_dsc5784.jpg" alt="mobileportrait">
+
+
+        </picture>
+    </div>
+
+
+    <section class="billedeboks_wrapper">
+
+        <h1 class="lån">Lån med fornuft</h1>
+        <div class="mellemrum"></div>
+        <div class="infotxt">
+        <p>Er du 18-32 år, kan du tilmelde dig Ung+, som giver dig ekstra gode fordele - f.eks. en lav udlånsrente på din kassekredit og dit forbrugslån.</p>
+
+        </div>
+    </section>
+
+        <section class="brug_for">
+        <h2>Har jeg virkelig brug for et forbrugslån?</h2>
+
+<p>Det er vigtigt at du stiller dig selv dette spørgsmål inden du tager et lån. Mange forbrugslån bliver brugt på ren luksus eller andre formål som egentlig ikke er nødvendige. </p>
+<p>Har du brug for en snak om din økonomi, så vil vi hos Alm. Brand meget gerne hjælpe dig.</p>
+  <div id="map"></div>
+        </section>
+
+
+
+
+    <section class="overskrift1">
+        <h2>Hvordan finder du det mest fornuftige lån til dig?</h2>
+
+<p>Vurderer du at et forbrugslån er nødvendigt, er det vigtigt at du bruger god tid på at finde den rigtige udbyder. På den måde sikrer du nemlig, at du får det mest fornuftige lån som muligt. Vi har samlet et par gode råd som vil gøre din research lettere.</p>
+
+<p>Læs vores gode råd herunder</p>
+
+<div class="raad">
+    <div class="gode1">
+<p>1. Gør først op med dig selv, hvor mange penge du ønsker at låne. Mangler du kun få penge du hurtigt og nemt kan tilbagebetale eller mangler du penge til en større ting?</p>
+        </div>
+
+        <div class="gode2">
+<p>2. Der er som regel stor forskel på at optage et kviklån, som f.eks. et SMS-lån, og at optage et forbrugslån i banken. Kviklån er har som regel en meget højere rente, hvilket kan blive rigtig dyrt for dig.</p>
+        </div>
+
+    <div class="gode3">
+<p>3. Renteniveauet på forbrugslån kan variere meget fra udbyder til udbyder, hvilket du skal være opmærksom på, hvis du tænker på at optage et forbrugslån.</p>
+        </div>
+
+    <div class="gode4">
+<p>4. Hvis du ikke kan leve op til låneaftalen, kræver mange udbydere ekstra gebyrer. Derfor er det vigtigt at du tager et møde med din bankrådgiver om din økonomi samt bankens krav for lån, inden du tager forbrugslånet.</p>
+        </div>
+
+    <div class="gode5">
+<p>5. Læs det med småt… I nogle tilfælde kan lånene pålægges andre former for gebyrer, som måske ikke fremgår så tydeligt, når du underskriver din låneaftale.</p>
+    </div>
+</div>
+
+        </section>
+        <section id="dyre_container">
+    <section class="de_dyre_wrapper">
+    <h1 class="de_dyre">Pas på de hurtige … og dyre forbrugslån</h1>
+    <div class="mellemrum"></div>
+        <div class="infotxt2">
+        <p>Når du er fyldt 18 år, får du mulighed for at låne penge, og faktisk har halvdelen af alle danskere mellem 18 og 29 år et lån*. Du kan bl.a. låne penge i banken eller tage et kviklån via nettet eller mobiltelefonen. Men vær opmærksom på hvor meget du i alt skal betale tilbage i kroner/øre - og på ÅOP på lånet.</p>
+
+
+
+        <p>ÅOP står for Årlige Omkostninger i Procent, og ÅOP fortæller med et enkelt tal, hvor dyrt lånet er. Ved at sammenligne ÅOP for forskellige lån på samme størrelse og med samme løbetid, kan du på den måde finde det billigste lån. Det lån, der har den laveste ÅOP er billigst.</p>
+
+
+
+        <p>Typisk har kviklån en høj ÅOP, derfor bør du overveje at vælge et banklån.</p>
+
+
+
+
+
+<p>(Kilde: Finans Danmark, Unge, gæld & opsparing, 2018*)</p>
+          </div>
+    </section>
+    </section>
+    <footer></footer>
+
 </body>
+    <script>
+//    Javascript til burgermenuen
+    function onLoad() {
+
+        // if (window.innerWidth <= 768) {
+
+        function toggleMenu() {
+
+            document.querySelector(".burger").classList.toggle("change");
+            document.querySelector("nav").classList.toggle("show");
+        }
+        document.querySelector(".burger").addEventListener("click", toggleMenu);
+        document.querySelector("ul").addEventListener("click", toggleMenu);
+
+    }
+    //}
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        onLoad();
+    });
+
+        document.addEventListener("DOMContentLoaded", function(){
+            runSvg();
+        });
+        async function runSvg(){
+            //load svg//
+            let mySvg = await fetch("menneske_diagram-01.svg");
+            let svg = await mySvg.text();
+
+            document.querySelector("#map").innerHTML = svg;
+        }
+</script>
+
+
 </html>
