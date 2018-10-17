@@ -350,16 +350,16 @@ form {
 
 /* Style af formular */
 
-     {
-    box-sizing: border-box;
-}
-
 input[type=text], select, textarea {
     width: 97.5%;
     padding: 12px;
-    border: 1px solid #efefef;
-    border-radius: 4px;
-    resize: vertical;
+    background-color: #efefef;
+    box-sizing: border-box;
+    /*border: 1px solid #efefef;*/
+    border: none;
+    border-bottom: 1.4px solid #000000;
+/*    border-radius: 4px;*/
+/*    resize: vertical;*/
 }
 
 label {
