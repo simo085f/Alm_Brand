@@ -115,20 +115,17 @@ picture img {
 
 /*Splashbillede boks*/
 .container{
-    /*display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 100px 100px 100px;
-    grid-gap: 5px;*/
+
 }
 
 .container {
-  /*grid-template-columns: [first] 5px [line2] 40px [line3] auto [col4-start] 40px [five] 5px [end];
-  grid-template-rows: [row1-start] 50% [row1-end] 100px [third-line] auto [last-line];*/
+
 }
 
 
 .billedeboks_wrapper{
     height: 50vw;
+    width: 90%;
     background-color: #00b9ea;
     z-index: 6;
     position: relative;
@@ -140,7 +137,8 @@ picture img {
     grid-column-end: 5;
     grid-row-end: 3;*/
     padding: 2vw;
-    margin: 4vw;
+    margin-left: auto;
+    margin-right: auto;
    margin-top: -10vw;
 }
 
@@ -153,17 +151,18 @@ picture img {
 
 .brug_for{
     margin: 4vw;
+    margin-top: auto;
 }
 
 #map{
     display: flex;
     flex flex-wrap: wrap;
-    margin-top: -80vw;
+    margin-top: auto;
 }
 
 .overskrift1{
     margin: 4vw;
-    margin-top: -80vw;
+    margin-top: auto;
 
 }
 
@@ -186,6 +185,7 @@ picture img {
     flex-wrap: wrap;
     align-content: center;
     margin: 4vw;
+
 }
 .de_dyre_wrapper{
     background-color: #ebf6fc;
@@ -193,10 +193,6 @@ picture img {
     width: 90vw;
     padding: 4vw;
     text-align: center;
-   /* grid-row: 5;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-end: 6;*/
 
 
     }
@@ -211,62 +207,6 @@ picture img {
 }
 
 
-
-@media screen and (min-width: 768px) {
-.burger {
-        display: none;
-
-    }
-    nav {
-        max-height: 600px;
-
-    }
-    li {
-        display: inline-block;
-        margin-top: 1vw;
-        cursor: pointer;
-
-    }
-
-         nav {
-        height: 50px;
-        width: 100%;
-        background-color: white;
-        margin: 0px;
-        text-align: right;
-
-    }
-    nav a {
-        display: inline-flex;
-        margin: 0.8em;
-
-    }
-
-    .logo {
-        width: 200px;
-        height: 50px;
-        text-align: left;
-        margin-left: 1.5em;
-        display: block;
-    }
-
-    header {
-        position: fixed;
-        top: 0;
-        display: flex;
-        background: white;
-        width: 100%;
-
-    }
-
-    header img {
-        display: block;
-        width: auto;
-        height: 100%;
-
-
-    }
-}
 
 /* Style låneansøgning */
 
@@ -405,11 +345,6 @@ form {
 
 
         }
-h2{
-    font-size: 1em;
-    font-weight: 300;
-
-}
 
 
 
@@ -487,3 +422,64 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 }*/
+
+@media screen and (min-width: 768px) {
+.burger {
+        display: none;
+
+    }
+    nav {
+        max-height: 600px;
+
+    }
+    li {
+        display: inline-block;
+        margin-top: 1vw;
+        cursor: pointer;
+
+    }
+
+         nav {
+        height: 50px;
+        width: 100%;
+        background-color: white;
+        margin: 0px;
+        text-align: right;
+
+    }
+    nav a {
+        display: inline-flex;
+        margin: 0.8em;
+
+    }
+
+    .logo {
+        width: 200px;
+        height: 50px;
+        text-align: left;
+        margin-left: 1.5em;
+        display: block;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        display: flex;
+        background: white;
+        width: 100%;
+
+    }
+
+    header img {
+        display: block;
+        width: auto;
+        height: 100%;
+
+
+    }
+
+    .billedeboks_wrapper{
+        height: 30vw;
+        width: 70%;
+
+}
