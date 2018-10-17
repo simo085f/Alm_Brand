@@ -121,6 +121,74 @@
 
     </section>
 
+<!--Låneansøgning-->
+
+       <section class="sectionwrapper">
+        <h1>Låneansøgning:</h1>
+        <form oninput="x.value=parseInt(myRange.value)/parseInt(years.value)/12">
+            <section class="sliders1">
+
+               <h2>Hvor meget vil du låne?</h2>
+                <section class="slidernr1">
+                    <input type="range" min="5000" max="100000" class="slider1" id="myRange" step="1000" value="50000">
+                    <div class="bokstildemo">
+                    <div id="demo"></div>
+                    </div>
+                </section>
+            </section>
+
+                <section class="sliders2">
+                <h2>Over hvor lang tid vil du tilbagebetale?</h2>
+                <section class="slidernr2">
+                    <input type="range" class="slider2" id="years" min="1" max="20" value="10">
+                    <div class="bokstilyears">
+                    <div id="yearsdemo"></div>
+                    </div>
+                </section>
+
+            </section>
+            <!--UDREGNING-->
+            <section class="udregning">
+            <p>Du skal tilbagebetale</p>
+            <output name="x" for="myRange years"></output> kr. om måneden.
+            </section>
+        </form>
+    </section>
+
+<div class="container2">
+ <h2>Indtast dit navn og nummer, så kontakter vi dig</h2>
+  <form action="#">
+    <div class="row">
+      <div class="navn">
+        <label for="fnavn">Fornavn</label>
+      </div>
+      <div class="ph">
+        <input type="text" id="fnavn" name="fornavn" placeholder="Dit fornavn...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="navn">
+        <label for="enavn">Efternavn</label>
+      </div>
+      <div class="ph">
+        <input type="text" id="enavn" name="efternavn" placeholder="Dit efternavn...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="navn">
+        <label for="mobil">Mobil nr</label>
+      </div>
+      <div class="ph">
+        <input type="text" id="mobil" name="mobilnr" placeholder="Indtast dit mobil nummer...">
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
     <footer></footer>
 
 </body>
@@ -155,6 +223,25 @@
 
         document.querySelector("#map").innerHTML = svg;
     }
+
+    // Låneansøgning show text //
+
+    var slider1 = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider1.value + " kr.";
+
+        slider1.oninput = function() {
+            output.innerHTML = this.value + " kr.";
+        }
+
+        var slider2 = document.getElementById("years");
+        var output2 = document.getElementById("yearsdemo");
+        output2.innerHTML = slider2.value + " år";
+
+        slider2.oninput = function() {
+            output2.innerHTML = this.value + " år";
+        }
+
 </script>
 
 
