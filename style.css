@@ -66,13 +66,13 @@ header img {
 
 }
 
-ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+nav li {
     padding: 5px;
     cursor: pointer;
     display: inline-block;
@@ -165,33 +165,17 @@ picture img {
     margin-top: -80vw;
 
 }
-.raad{
-background-color:
-}
 
-.gode1{
-
-}
-
-.gode2{
-
-    background-color: #f2fafd;
-    margin-top
-}
-
-.gode3{
-    background-color: #ebf6fc;
-    margin-top:
-}
-
-.gode4{
-    background-color: #e2f2fb;
-    margin-top:
-}
-
-.gode5{
-    background-color: #d5edfa;
-    margin-top:
+.button {
+    background-color: #00b9ea;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 /*pas på de dyre tekst*/
@@ -215,6 +199,16 @@ background-color:
 
 
     }
+
+.overskrift2 {
+    margin: 4vw;
+
+}
+
+.overskrift2 ul{
+    font-family:'Work Sans', sans-serif;
+}
+
 
 
 @media screen and (min-width: 768px) {
