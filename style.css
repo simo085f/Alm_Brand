@@ -415,6 +415,10 @@ input[type=submit]:hover {
     clear: both;
 }
 
+.link {
+    text-decoration: underline;
+}
+
 
 /*@media screen and (max-width: 600px) {
     .navn, .ph, input[type=submit] {
