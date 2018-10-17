@@ -6,6 +6,10 @@ body{
 p{
     font-family: 'Work Sans', sans-serif;
 }
+
+h1{
+    font-family: 'Georgia', sans-serif;
+}
 /*navigation*/
 header {
     display: grid;
