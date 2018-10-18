@@ -458,6 +458,73 @@ position: relative;
 
 }
 
+
+.boksewrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4vw;
+
+}
+
+.picture {
+    width: 60vw;
+    height: 60vw;
+}
+
+.picture img {
+    width: 100%;
+
+}
+
+.txt {
+    width: 56.7%;
+    height: auto;
+    background-color: #00b9ea;
+    opacity: .98;
+    color: white;
+    padding: 4vw;
+    position: relative;
+    top: -10vw;
+}
+
+
+
+.boksewrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4vw;
+
+}
+
+
+.iframe-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.txt2 {
+    width: 100%;
+    height: 80%;
+    background-color: #00b9ea;
+    opacity: .98;
+    color: white;
+    padding: 4vw;
+}
+
+
 /*@media screen and (max-width: 600px) {
     .navn, .ph, input[type=submit] {
         width: 100%;
@@ -523,4 +590,96 @@ position: relative;
     .billedeboks_wrapper{
         height: 30vw;
         width: 70%;
+}
+
+    .boksewrapper {
+        height: 45vw;
+        margin-left: 14vw;
+    }
+
+    .picture {
+        max-width: 50%
+    }
+
+    .picture img {
+        width: 100%;
+
+    }
+
+    .txt {
+        width: 37vw;
+        height: 25vw;
+        background-color: #00b9ea;
+        opacity: .98;
+        color: white;
+        padding: 2vw;
+        transform: translateX(-10em);
+        position: relative;
+        top: 17vw;
+        z-index: 3;
+    }
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .boksewrapper {
+        height: 35vw;
+        margin-left: 14vw;
+    }
+
+    .picture {
+        max-width: 40%
+    }
+
+    .picture img {
+        width: 100%;
+
+    }
+
+    .txt {
+        width: 37vw;
+        height: 15vw;
+        background-color: #00b9ea;
+        opacity: .98;
+        color: white;
+        padding: 2vw;
+        transform: translateX(-10em);
+        position: relative;
+        top: 17vw;
+        z-index: 3;
+    }
+
+
+    .boksewrapper2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 4vw;
+        max-width: 70%;
+
+    }
+
+
+    .iframe-container {
+        max-width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .iframe-container iframe {
+        width: 100% position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    .txt2 {
+        width: 100%;
+        background-color: #00b9ea;
+        opacity: .98;
+        color: white;
+        margin: auto;
+    }
 }
