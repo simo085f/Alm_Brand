@@ -190,7 +190,7 @@ picture img {
 }
 .de_dyre_wrapper{
     background-color: #ebf6fc;
-    height: 203vw;
+    height: 150vw;
     width: 90vw;
     padding: 4vw;
     text-align: center;
@@ -342,17 +342,25 @@ form {
 
         }
 
+        .udregning {
+
+
+        }
+
+
 
 /* Style af formular */
 
 input[type=text], select, textarea {
     width: 97.5%;
     padding: 12px;
-    background-color: white;
+    background-color: #efefef;
     box-sizing: border-box;
-    border: 1px solid #efefef;
-border-radius: 4px;
-resize: vertical;
+    /*border: 1px solid #efefef;*/
+    border: none;
+    border-bottom: 1.4px solid #000000;
+/*    border-radius: 4px;*/
+/*    resize: vertical;*/
 }
 
 label {
@@ -411,10 +419,42 @@ input[type=submit]:hover {
     text-decoration: underline;
 }
 
+
+/* Boks m. billede og tekst */
+
+.boksewrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4vw;
+
+}
+
+.picture {
+    width: 60vw;
+    height: 60vw;
+}
+
+.picture img {
+    width: 100%;
+
+}
+
+.txt {
+    width: 52vw;
+    height: 40vw;
+    background-color: #00b9ea;
+    opacity: .98;
+    color: white;
+    padding: 4vw;
+    position: relative;
+    top: -10vw;
+}
+
 /* Cirkeldiagram */
 
 #cirkeldiagram {
-
+    background-color: brown;
     width: 50vw;
     height: 50vw;
     margin: auto;
@@ -453,8 +493,7 @@ position: relative;
     border-radius: 300px;
     display: flex;
     justify-content: center;
-    font-size: 155%;
-    letter-spacing: -3px;
+    font-size: 150%;
 
 }
 
@@ -520,7 +559,63 @@ position: relative;
 
     }
 
-    .billedeboks_wrapper{
-        height: 30vw;
-        width: 70%;
+    .boksewrapper{
+        height: 45vw;
+        margin-left: 14vw;
+    }
+
+.picture {
+max-width: 50%
 }
+
+.picture img {
+    width: 100%;
+
+}
+
+.txt {
+    width: 37vw;
+    height: 25vw;
+    background-color: #00b9ea;
+    opacity: .98;
+    color: white;
+    padding: 2vw;
+    transform: translateX(-10em);
+    position: relative;
+    top: 17vw;
+    z-index: 3;
+}
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+.boksewrapper{
+        height: 35vw;
+        margin-left: 14vw;
+    }
+
+.picture {
+max-width: 40%
+}
+
+.picture img {
+    width: 100%;
+
+}
+
+.txt {
+    width: 37vw;
+    height: 15vw;
+    background-color: #00b9ea;
+    opacity: .98;
+    color: white;
+    padding: 2vw;
+    transform: translateX(-10em);
+    position: relative;
+    top: 17vw;
+    z-index: 3;
+}
+}
+
