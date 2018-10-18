@@ -439,8 +439,8 @@ input[type=submit]:hover {
 }
 
 .txt {
-    width: 52vw;
-    height: 40vw;
+    width: 56.7%;
+    height: auto;
     background-color: #00b9ea;
     opacity: .98;
     color: white;
@@ -456,7 +456,6 @@ input[type=submit]:hover {
     flex-wrap: wrap;
     justify-content: center;
     margin: 4vw;
-    height: 50vw;
 
 }
 
@@ -661,8 +660,8 @@ input[type=submit]:hover {
     .boksewrapper2 {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         margin: 4vw;
+        max-width: 70%;
 
     }
 
