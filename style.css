@@ -1255,8 +1255,3 @@ footer p{
 
 }
 
-@media screen and (min-width: 1920px){
-    .some{
-        margin-left: 36vw;
-    }
-}
