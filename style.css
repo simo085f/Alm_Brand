@@ -71,6 +71,8 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 6;
 }
 
 nav li {
@@ -114,13 +116,7 @@ picture img {
 }
 
 /*Splashbillede boks*/
-.container{
 
-}
-
-.container {
-
-}
 
 
 .billedeboks_wrapper{
@@ -318,7 +314,7 @@ form {
             display: flex;
             justify-content: space-around;
             border-radius: 3px;
-            margin-top: 0.6vw;
+           margin-top: 0.6vw;
             margin-left: -1.6vw;
             border-left: 2px solid #A1DAF8;
             display: inline-flex;
@@ -328,7 +324,7 @@ form {
             padding: 1vw;
         }
 
-        .sectionwrapper {
+        #sectionwrapper {
             background-color: #A1DAF8;
             margin: 4vw;
             padding: 10px;
@@ -389,7 +385,6 @@ input[type=submit]:hover {
 }
 
 .container2 {
-    border-radius: 5px;
     background-color: #efefef;
     padding: 10px;
     margin: 4vw;
@@ -466,7 +461,6 @@ position: relative;
     border-radius: 300px;
     display: flex;
     justify-content: center;
-    align-content: center;
     font-size: 150%;
 
 }
@@ -536,5 +530,4 @@ position: relative;
     .billedeboks_wrapper{
         height: 30vw;
         width: 70%;
-
 }
