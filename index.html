@@ -104,6 +104,11 @@
 
 
                 <p>(Kilde: Finans Danmark, Unge, gæld & opsparing, 2018*)</p>
+                <div id="cirkeldiagram">
+                    <div class="talboks">
+                        <p>23.329</p>
+                    </div>
+                </div>
             </div>
         </section>
     </section>
@@ -195,6 +200,11 @@
 
 </body>
 <script>
+
+    let tal = 0;
+    let topTal = 23329;
+    let delay = 5000;
+
     //    Javascript til burgermenuen
     function onLoad() {
 
@@ -226,6 +236,40 @@
         document.querySelector("#map").innerHTML = svg;
     }
 
+
+    document.addEventListener("DOMContentLoaded", function() {
+        startSvg();
+    });
+    async function startSvg() {
+        //load svg//
+        let mySvg = await fetch("cirkeldiagram1.svg");
+        let svg = await mySvg.text();
+
+        document.querySelector("#cirkeldiagram").innerHTML += svg;
+        document.querySelector("#cirkeldiagram .talboks").style.zIndex = "100";+
+            opdaterTal();
+    }
+
+    function opdaterTal(){
+        //ha et tal til at vokse
+        //vis tallet+
+        let qvotient= Math.round(topTal/delay);
+        tal += qvotient;
+
+        if (tal<= 23329){
+            if(tal== 23325){
+            tal=topTal;
+        }
+            console.log(tal, qvotient);
+
+
+            document.querySelector(".talboks p").textContent=tal;
+
+        setInterval(opdaterTal, qvotient);
+        }
+
+
+    }
     // Låneansøgning show text //
 
     var slider1 = document.getElementById("myRange");

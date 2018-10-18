@@ -190,7 +190,7 @@ picture img {
 }
 .de_dyre_wrapper{
     background-color: #ebf6fc;
-    height: 150vw;
+    height: 203vw;
     width: 90vw;
     padding: 4vw;
     text-align: center;
@@ -422,7 +422,7 @@ input[type=submit]:hover {
 /* Cirkeldiagram */
 
 #cirkeldiagram {
-    background-color: brown;
+
     width: 50vw;
     height: 50vw;
     margin: auto;
@@ -461,7 +461,8 @@ position: relative;
     border-radius: 300px;
     display: flex;
     justify-content: center;
-    font-size: 150%;
+    font-size: 155%;
+    letter-spacing: -3px;
 
 }
 
