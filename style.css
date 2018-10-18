@@ -48,7 +48,7 @@ header {
     opacity: .95;
     width: 100%;
     position: fixed;
-    z-index: 8;
+    z-index: 1000;
 
 }
 
@@ -549,6 +549,75 @@ input[type=submit]:hover {
 
 }
 
+footer {
+    background-color: #00b9ea;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h1{
+    font-size: 20px;
+}
+
+footer p{
+    font-size: 14px;
+}
+
+.footer-content {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.some {
+    width: 100%;
+    margin: 1vw;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #052951;
+  color: white;
+}
+
+.fa-instagram {
+  background: #052951;
+  color: white;
+}
+
+.kontakt {
+    width: 250px;
+    margin: 1vw;
+}
+
+.kontakt a{
+    text-decoration: underline;
+    color: white;
+}
+
+.adresse {
+    width: 250px;
+    margin: 1vw;
+}
+
 @media screen and (min-width: 627px){
     .billedeboks_wrapper{
         width: 75%;
@@ -604,6 +673,15 @@ input[type=submit]:hover {
         margin: 8vw;
         margin-top: -8vw;
     }
+
+    .footer-content{
+        text-align: left;
+    }
+
+    .some{
+        margin-left: 9vw;
+    }
+
 
 }
 
@@ -766,6 +844,9 @@ input[type=submit]:hover {
 
 
 }
+    .some{
+        margin-left: 16vw;
+    }
 
 }
 
@@ -823,14 +904,14 @@ input[type=submit]:hover {
 
     .boksewrapper2{
         margin-left: 15vw;
-        margin-left: 15vw;
+        margin-right: 15vw;
 
     }
 
 
     .overskrift1{
         margin-left: 15vw;
-        margin-left: 15vw;
+        margin-right: 15vw;
 
     }
 
@@ -851,7 +932,7 @@ input[type=submit]:hover {
 
     .overskrift2{
         margin-left: 15vw;
-        margin-left: 15vw;
+        margin-right: 15vw;
         margin-top: -8vw;
         margin-bottom: 10vw;
 
@@ -859,12 +940,12 @@ input[type=submit]:hover {
 
     #sectionwrapper{
         margin-left: 15vw;
-        margin-left: 15vw;
+        margin-right: 15vw;
     }
 
     .container2{
         margin-left: 15vw;
-        margin-left: 15vw;
+        margin-right: 15vw;
 
     }
 
@@ -947,5 +1028,202 @@ input[type=submit]:hover {
     #map svg {
     width: 70vw;
 }
+    .some{
+        margin-left: 24vw;
+    }
+
+}
+
+@media screen and (min-width: 1536px){
+    header{
+        height: 80px;
+    }
+
+    .splash-container{
+        margin-top: 100px;
+    }
+
+     .billedeboks_wrapper {
+        height: 10vw;
+        width: 55%;
+    }
+
+    .boksewrapper {
+
+    }
+
+    .picture {
+       width: 100%;
+
+    }
+
+    .picture img {
+        width: 100%;
+
+    }
+
+    .txt {
+        width: 100%;
+        height: 30vw;
+        background-color: #00b9ea;
+        opacity: .98;
+        color: white;
+        padding: 2vw;
+        transform: translateX();
+
+    }
+
+    /*.billedeboks_wrapper{
+        width: 75%;
+        height: 30vw;
+        padding: 5vw;
+
+    }*/
+
+
+    .brug_for{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+    }
+
+    .boksewrapper{
+        margin: 10vw;
+        margin-top: -3vw;
+        margin-bottom: 70vw;
+    }
+
+    .boksewrapper2{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+
+    }
+
+
+    .overskrift1{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+
+    }
+
+    .de_dyre_wrapper{
+        margin: 13.7vw;
+        height: 75vw;
+        margin-top: -0.5vw;
+    }
+
+    .talboks{
+        margin-top: 0.3vw;
+        font-size: 500%
+    }
+
+    #cirkeldiagram{
+      margin-top: 4vw;
+    }
+
+    .overskrift2{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+        margin-top: -8vw;
+        margin-bottom: 10vw;
+
+    }
+
+    #sectionwrapper{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+    }
+
+    .container2{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+
+    }
+
+    .bokstildemo {
+    margin-top: 0.16vw;
+    margin-left: -1.2vw;
+        height: 25.5px;
+
+
+}
+
+
+.bokstilyears {
+    margin-top: 0.14vw;
+    margin-left: -1.2vw;
+    height: 25px;
+
+
+}
+
+    .boksewrapper {
+        height: 35vw;
+        margin-left: 14vw;
+    }
+
+    .picture {
+        max-width: 40%
+    }
+
+    .picture img {
+        width: 100%;
+
+    }
+
+    .txt {
+        width: 37vw;
+        height: 15vw;
+        background-color: #00b9ea;
+        opacity: .98;
+        color: white;
+        padding: 2vw;
+        transform: translateX(-10em);
+        position: relative;
+        top: 17vw;
+        z-index: 3;
+    }
+
+
+    .boksewrapper2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 4vw;
+        max-width: 70%;
+
+    }
+
+
+    .iframe-container {
+        max-width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .iframe-container iframe {
+        width: 100% position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    .txt2 {
+        width: 100%;
+        background-color: #00b9ea;
+        opacity: .98;
+        color: white;
+        margin: auto;
+    }
+
+    #map svg {
+    width: 70vw;
+}
+    .some{
+        margin-left: 33vw;
+    }
+
+    #yearsdemo, #demo{
+        padding: 0.3vw;
+    }
 
 }
