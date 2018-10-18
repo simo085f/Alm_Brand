@@ -524,6 +524,7 @@ position: relative;
     padding: 4vw;
 }
 
+ /* NYT TIL CSS START */
 
 /* FOOTER */
 
@@ -594,6 +595,8 @@ footer p{
     width: 250px;
     margin: 1vw;
 }
+
+ /* NYT TIL CSS SLUT */
 
 /*@media screen and (max-width: 600px) {
     .navn, .ph, input[type=submit] {
@@ -689,10 +692,12 @@ footer p{
         z-index: 3;
     }
 
+    /* NYT TIL CSS START */
             .some {
     width: 200px;
     margin-top: 2vw;
 }
+     /* NYT TIL CSS SLUT */
 
 }
 
@@ -758,8 +763,10 @@ footer p{
         margin: auto;
     }
 
+     /* NYT TIL CSS START */
         .some {
     width: 200px;
     margin-top: 3vw;
 }
+     /* NYT TIL CSS SLUT */
 }
