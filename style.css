@@ -532,8 +532,7 @@ input[type=submit]:hover {
 
 .iframe-container iframe {
     position: absolute;
-    top: 0;
-    left: 0;
+
     width: 100%;
     height: 100%;
 }
@@ -899,7 +898,7 @@ footer p{
     .boksewrapper{
         margin: 10vw;
         margin-top: -3vw;
-        margin-bottom: 70vw;
+        margin-bottom: 40vw;
     }
 
     .boksewrapper2{
@@ -966,64 +965,6 @@ footer p{
 
 }
 
-    .boksewrapper {
-        height: 35vw;
-        margin-left: 14vw;
-    }
-
-    .picture {
-        max-width: 40%
-    }
-
-    .picture img {
-        width: 100%;
-
-    }
-
-    .txt {
-        width: 37vw;
-        height: 15vw;
-        background-color: #00b9ea;
-        opacity: .98;
-        color: white;
-        padding: 2vw;
-        transform: translateX(-10em);
-        position: relative;
-        top: 17vw;
-        z-index: 3;
-    }
-
-
-    .boksewrapper2 {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 4vw;
-        max-width: 70%;
-
-    }
-
-
-    .iframe-container {
-        max-width: 100%;
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-    }
-
-    .iframe-container iframe {
-        width: 100% position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-
-    .txt2 {
-        width: 100%;
-        background-color: #00b9ea;
-        opacity: .98;
-        color: white;
-        margin: auto;
-    }
 
     #map svg {
     width: 70vw;
@@ -1032,9 +973,73 @@ footer p{
         margin-left: 24vw;
     }
 
+     .boksewrapper2{
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+    margin-left: 15vw;
 }
 
-@media screen and (min-width: 1536px){
+.iframe-container{
+         display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    margin-left: -15vw;
+
+}
+
+
+
+.txt2{
+
+    color: white;
+    margin-top: -4vw;
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    margin-left: 20vw;
+  width: 500px;
+    padding: 2vw;
+}
+
+.boksewrapper{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+    margin-left: 15.5vw;
+}
+
+.picture img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    position: relative;
+    z-index: 1;
+}
+
+.txt{
+
+
+    color: white;
+
+    position: relative;
+    z-index: 4;
+    width: 300px;
+    height: 200px;
+    margin-left: 10vw;
+  width: 500px;
+    padding: 2vw;
+
+}
+
+}
+
+
+@media screen and (min-width: 1440px){
     header{
         height: 80px;
     }
@@ -1048,54 +1053,11 @@ footer p{
         width: 55%;
     }
 
-    .boksewrapper {
-
-    }
-
-    .picture {
-       width: 100%;
-
-    }
-
-    .picture img {
-        width: 100%;
-
-    }
-
-    .txt {
-        width: 100%;
-        height: 30vw;
-        background-color: #00b9ea;
-        opacity: .98;
-        color: white;
-        padding: 2vw;
-        transform: translateX();
-
-    }
-
-    /*.billedeboks_wrapper{
-        width: 75%;
-        height: 30vw;
-        padding: 5vw;
-
-    }*/
 
 
     .brug_for{
         margin-left: 17.6vw;
         margin-right: 17.6vw;
-    }
-
-    .boksewrapper{
-        margin: 10vw;
-        margin-top: -3vw;
-        margin-bottom: 70vw;
-    }
-
-    .boksewrapper2{
-        margin-left: 17.6vw;
-        margin-right: 17.6vw;
-
     }
 
 
@@ -1118,12 +1080,13 @@ footer p{
 
     #cirkeldiagram{
       margin-top: 4vw;
+
     }
 
     .overskrift2{
         margin-left: 17.6vw;
         margin-right: 17.6vw;
-        margin-top: -8vw;
+        margin-top: -15vw;
         margin-bottom: 10vw;
 
     }
@@ -1156,65 +1119,6 @@ footer p{
 
 }
 
-    .boksewrapper {
-        height: 35vw;
-        margin-left: 14vw;
-    }
-
-    .picture {
-        max-width: 40%
-    }
-
-    .picture img {
-        width: 100%;
-
-    }
-
-    .txt {
-        width: 37vw;
-        height: 15vw;
-        background-color: #00b9ea;
-        opacity: .98;
-        color: white;
-        padding: 2vw;
-        transform: translateX(-10em);
-        position: relative;
-        top: 17vw;
-        z-index: 3;
-    }
-
-
-    .boksewrapper2 {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 4vw;
-        max-width: 70%;
-
-    }
-
-
-    .iframe-container {
-        max-width: 100%;
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-    }
-
-    .iframe-container iframe {
-        width: 100% position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-
-    .txt2 {
-        width: 100%;
-        background-color: #00b9ea;
-        opacity: .98;
-        color: white;
-        margin: auto;
-    }
-
     #map svg {
     width: 70vw;
 }
@@ -1226,4 +1130,133 @@ footer p{
         padding: 0.3vw;
     }
 
+    .boksewrapper2{
+    margin-left: 17.6vw;
+}
+
+.iframe-container{
+    margin-left: -14vw;
+
+}
+
+
+
+.txt2{
+  width: 550px;
+
+}
+
+.boksewrapper{
+    margin-left: 18vw;
+    margin-top: -10vw;
+
+
+}
+
+
+
+.txt{
+    margin-right: -8.5vw;
+
+
+}
+       #map svg {
+    width: 65vw;
+}
+        .bokstildemo {
+    margin-top: 0.15vw;
+    margin-left: -1.4vw;
+    height: 26px;
+
+}
+
+
+.bokstilyears {
+    margin-top: 0.1vw;
+    margin-left: -1.4vw;
+    height: 25.5px;
+
+
+}
+    .some{
+        margin-left: 31.5vw;
+    }
+
+    .de_dyre_wrapper{
+        padding: 8vw;
+        height: 55vw;
+    }
+
+    #cirkeldiagram {
+
+    width: 30vw;
+    height: 30vw;
+    margin: auto;
+    position: relative;
+        margin-top: 4vw;
+
+}
+
+#cirkeldiagram svg {
+    width: 30vw;
+    height: 30vw;
+
+}
+    .talboks {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: calc(30% - -10%);
+    left: calc(30% - -10%);
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+    letter-spacing: -2.5px;
+    margin-top: -2vw;
+
+}
+}
+
+@media screen and (min-width: 1536px){
+            .bokstildemo {
+    margin-top: 0.13vw;
+    margin-left: -1.4vw;
+    height: 26px;
+
+}
+
+
+.bokstilyears {
+    margin-top: 0.13vw;
+    margin-left: -1.4vw;
+    height: 25.5px;
+
+
+}
+    .some{
+        margin-left: 32.5vw;
+    }
+
+.boksewrapper{
+    margin-left: 18vw;
+    margin-top: -10vw;
+}
+
+.txt2{
+  width: 585px;
+
+}
+
+    .overskrift2{
+        margin-top: -18vw;
+    }
+
+
+}
+
+@media screen and (min-width: 1920px){
+    .some{
+        margin-left: 36vw;
+    }
 }
