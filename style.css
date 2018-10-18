@@ -1,17 +1,17 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-p{
+p {
     font-family: 'Work Sans', sans-serif;
+    font-size:
 }
 
-h1{
-
-}
+h1 {}
 
 /*navigation*/
+
 header {
     display: grid;
     grid-template-columns: 1fr;
@@ -48,7 +48,7 @@ header {
     opacity: .95;
     width: 100%;
     position: fixed;
-    z-index: 8;
+    z-index: 1000;
 
 }
 
@@ -99,11 +99,13 @@ a {
 
 }
 
-.bar1,.bar3{
+.bar1,
+.bar3 {
     width: 31px;
 }
 
 /*Splashbillede*/
+
 picture img {
     width: 100%;
     z-index: 5;
@@ -111,15 +113,12 @@ picture img {
 
 .splash-container {
     margin-top: 80px;
-/*    grid-column-end: span 5;*/
-
+    /*    grid-column-end: span 5;*/
 }
 
 /*Splashbillede boks*/
 
-
-
-.billedeboks_wrapper{
+.billedeboks_wrapper {
     height: 50vw;
     width: 90%;
     background-color: #00b9ea;
@@ -135,35 +134,45 @@ picture img {
     padding: 2vw;
     margin-left: auto;
     margin-right: auto;
-   margin-top: -10vw;
+    margin-top: -10vw;
+    margin-bottom: 8vw;
 }
 
-.mellemrum{
+.mellemrum {
     width: 60px;
     height: 2px;
     margin: 1.15rem auto 1.4rem;
     background: #052951;
 }
 
-.brug_for{
+.mellemrum1 {
+    width: 60px;
+    height: 2px;
+    margin: 1.15rem auto 1.4rem;
+    background: #fff;
+}
+
+.brug_for {
     margin: 4vw;
     margin-top: auto;
 }
 
-#map{
+#map {
     width: 80vw;
     height: 60vw;
     margin: auto;
+    margin-bottom: 8vw;
 }
 
-#map svg{
+#map svg {
     width: 80vw;
     height: 70vw;
 }
 
-.overskrift1{
+.overskrift1 {
     margin: 4vw;
     margin-top: auto;
+    margin-bottom: 8vw;
 
 }
 
@@ -177,182 +186,192 @@ picture img {
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
+
 }
 
 /*pas på de dyre tekst*/
 
-#dyre_container{
+#dyre_container {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     margin: 4vw;
+    margin-bottom: 8vw;
 
 }
-.de_dyre_wrapper{
+
+.de_dyre_wrapper {
     background-color: #ebf6fc;
-    height: 203vw;
+    height: 209vw;
     width: 90vw;
     padding: 4vw;
     text-align: center;
 
+}
 
-    }
+.de_dyre_wrapper h1 {
+    font-size: 1.5em;
+}
 
 .overskrift2 {
     margin: 4vw;
+    margin-top: -8vw;
+    margin-bottom: 8vw;
 
 }
 
-.overskrift2 ul{
-    font-family:'Work Sans', sans-serif;
+.overskrift2 ul {
+    font-family: 'Work Sans', sans-serif;
 }
 
 
 
 /* Style låneansøgning */
 
-
 /* Style af sliders + udregning */
 
 form {
-            font-family: 'Work Sans', sans-serif;
-            color: #292929;
-            font-size: 15px;
-        }
+    font-family: 'Work Sans', sans-serif;
+    color: #292929;
+    font-size: 15px;
+}
 
 
 
-        .slider1 {
-            -webkit-appearance: none;
-            width: 100%;
-            height: 26px;
-            border-radius: 3px;
-            background: #efefef;
-            outline: none;
-            opacity: 3.7;
-            -webkit-transition: .2s;
-            transition: opacity .2s;
-        }
+.slider1 {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 26px;
+    border-radius: 3px;
+    background: #efefef;
+    outline: none;
+    opacity: 3.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
 
-        .slider1:hover {
-            opacity: 1;
-        }
+.slider1:hover {
+    opacity: 1;
+}
 
-        .slider1::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background: #19adef;
-            cursor: pointer;
-            position: relative;
-            z-index: 4;
-        }
+.slider1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #19adef;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+}
 
-        .slider2 {
-            -webkit-appearance: none;
-            width: 100%;
-            height: 25px;
-            border-radius: 3px;
-            background: #efefef;
-            outline: none;
-            opacity: 3.7;
-            -webkit-transition: .2s;
-            transition: opacity .2s;
-        }
+.slider2 {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    background: #efefef;
+    outline: none;
+    opacity: 3.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
 
-        .slider2:hover {
-            opacity: 1;
-        }
+.slider2:hover {
+    opacity: 1;
+}
 
-        .slider2::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background: #19adef;
-            cursor: pointer;
-            position: relative;
-            z-index: 4;
-        }
+.slider2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #19adef;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+}
 
-        .slidernr1 {
-            width: 99%;
-            display: flex;
-            padding-bottom: 4vw;
-        }
+.slidernr1 {
+    width: 99%;
+    display: flex;
+    padding-bottom: 4vw;
+}
 
-        .bokstildemo {
-            width: 150px;
-            height: 26px;
-            background: #efefef;
-            display: flex;
-            justify-content: space-around;
-            border-radius: 3px;
-            margin-top: 0.5vw;
-            margin-left: -1.6vw;
-            border-left: 2px solid #A1DAF8;
-        }
+.bokstildemo {
+    width: 150px;
+    height: 26px;
+    background: #efefef;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 3px;
+    margin-top: 0.5vw;
+    margin-left: -1.6vw;
+    border-left: 2px solid #A1DAF8;
+}
 
-        #demo {
-            padding: 1vw;
-        }
+#demo {
+    padding: 1vw;
+}
 
-        .slidernr2 {
-            width: 99%;
-            display: flex;
-            padding-bottom: 4vw;
+.slidernr2 {
+    width: 99%;
+    display: flex;
+    padding-bottom: 4vw;
 
-        }
+}
 
-        .bokstilyears {
-            width: 150px;
-            height: 25px;
-            background: #efefef;
-            display: flex;
-            justify-content: space-around;
-            border-radius: 3px;
-           margin-top: 0.6vw;
-            margin-left: -1.6vw;
-            border-left: 2px solid #A1DAF8;
-            display: inline-flex;
-        }
+.bokstilyears {
+    width: 150px;
+    height: 26px;
+    background: #efefef;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 3px;
+    margin-top: 0.4vw;
+    margin-left: -1.6vw;
+    border-left: 2px solid #A1DAF8;
 
-        #yearsdemo {
-            padding: 1vw;
-        }
+}
 
-        #sectionwrapper {
-            background-color: #A1DAF8;
-            margin: 4vw;
-            padding: 10px;
+#yearsdemo {
+    padding: 1vw;
+}
 
-        }
+#sectionwrapper {
+    background-color: #A1DAF8;
+    margin: 4vw;
+    padding: 10px;
+
+}
 
 
-        .sliders1 {
-            border-bottom: 1px solid white;
+.sliders1 {
+    border-bottom: 1px solid white;
 
-        }
-        .sliders2 {
+}
 
-            border-bottom: 1px solid white;
+.sliders2 {
 
-        }
+    border-bottom: 1px solid white;
+
+}
 
 
 /* Style af formular */
 
-input[type=text], select, textarea {
-    width: 97.5%;
+input[type=text],
+select,
+textarea {
+    width: 100%;
     padding: 12px;
     background-color: white;
     box-sizing: border-box;
     border: 1px solid #efefef;
-border-radius: 4px;
-resize: vertical;
+    border-radius: 4px;
+    resize: vertical;
 }
 
 label {
@@ -370,6 +389,7 @@ input[type=submit] {
     cursor: pointer;
     float: right;
     margin-top: 2vw;
+
 }
 
 input[type=submit]:hover {
@@ -381,9 +401,10 @@ input[type=submit]:hover {
     padding: 10px;
     margin: 4vw;
     margin-top: -4vw;
+    border-top: 1px solid white;
 }
 
-.container2 h2{
+.container2 h2 {
     font-size: 1em;
     font-weight: 300;
     font-family: 'Work Sans', sans-serif;
@@ -395,9 +416,9 @@ input[type=submit]:hover {
     margin-top: 6px;
 }
 
-.ph{
+.ph {
     float: left;
-    width: 68%;
+    width: 100%;
     margin-top: 6px;
 }
 
@@ -418,16 +439,17 @@ input[type=submit]:hover {
     width: 50vw;
     height: 50vw;
     margin: auto;
-position: relative;
+    position: relative;
 
 }
-#cirkeldiagram svg{
+
+#cirkeldiagram svg {
     width: 50vw;
     height: 50vw;
 
 }
 
-#stroke{
+#stroke {
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
     animation: dash 5s linear forwards;
@@ -437,24 +459,25 @@ position: relative;
 
 }
 
-@keyframes dash{
+@keyframes dash {
 
-    to{
+    to {
         stroke-dashoffset: 0;
     }
 }
 
-.talboks{
+.talboks {
     width: 34%;
     height: 34%;
     position: absolute;
-    top:calc(50% - 17%);
-    left:calc(50% - 17%);
+    top: calc(50% - 17%);
+    left: calc(50% - 17%);
     border-radius: 300px;
     display: flex;
     justify-content: center;
-    font-size: 155%;
-    letter-spacing: -3px;
+    font-size: 145%;
+    letter-spacing: -2.5px;
+    margin-top: -1vw;
 
 }
 
@@ -468,8 +491,8 @@ position: relative;
 }
 
 .picture {
-    width: 60vw;
-    height: 60vw;
+    width: 100%;
+
 }
 
 .picture img {
@@ -478,8 +501,6 @@ position: relative;
 }
 
 .txt {
-    width: 56.7%;
-    height: auto;
     background-color: #00b9ea;
     opacity: .98;
     color: white;
@@ -488,13 +509,16 @@ position: relative;
     top: -10vw;
 }
 
-
+.txt a {
+    color: white;
+}
 
 .boksewrapper2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 4vw;
+    margin-bottom: 8vw;
 
 }
 
@@ -522,18 +546,147 @@ position: relative;
     opacity: .98;
     color: white;
     padding: 4vw;
+
 }
 
+footer {
+    background-color: #00b9ea;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
 
-/*@media screen and (max-width: 600px) {
-    .navn, .ph, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
+footer h1{
+    font-size: 20px;
+}
+
+footer p{
+    font-size: 14px;
+}
+
+.footer-content {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.some {
+    width: 100%;
+    margin: 1vw;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #052951;
+  color: white;
+}
+
+.fa-instagram {
+  background: #052951;
+  color: white;
+}
+
+.kontakt {
+    width: 250px;
+    margin: 1vw;
+}
+
+.kontakt a{
+    text-decoration: underline;
+    color: white;
+}
+
+.adresse {
+    width: 250px;
+    margin: 1vw;
+}
+
+@media screen and (min-width: 627px){
+    .billedeboks_wrapper{
+        width: 75%;
+        height: 30vw;
+        padding: 5vw;
+
     }
-}*/
+
+    .brug_for{
+        margin: 8vw;
+    }
+
+    .boksewrapper{
+        margin: 8vw;
+        margin-top: -3vw;
+    }
+
+    .boksewrapper2{
+        margin: 8vw;
+    }
+
+
+    .overskrift1{
+        margin: 8vw;
+
+    }
+
+    .de_dyre_wrapper{
+        margin: 4vw;
+        height: 119vw;
+        margin-top: -0.5vw;
+    }
+
+    .talboks{
+        margin-top: 1vw;
+        font-size: 200%
+    }
+
+    .cirkeldiagram svg{
+
+    }
+
+    .overskrift2{
+        margin: 8vw;
+        margin-top: -8vw;
+    }
+
+    #sectionwrapper{
+        margin: 8vw;
+    }
+
+    .container2{
+        margin: 8vw;
+        margin-top: -8vw;
+    }
+
+    .footer-content{
+        text-align: left;
+    }
+
+    .some{
+        margin-left: 9vw;
+    }
+
+
+}
 
 @media screen and (min-width: 768px) {
-.burger {
+    .burger {
         display: none;
 
     }
@@ -548,7 +701,7 @@ position: relative;
 
     }
 
-         nav {
+    nav {
         height: 50px;
         width: 100%;
         background-color: white;
@@ -587,10 +740,10 @@ position: relative;
 
     }
 
-    .billedeboks_wrapper{
+    .billedeboks_wrapper {
         height: 30vw;
         width: 70%;
-}
+    }
 
     .boksewrapper {
         height: 45vw;
@@ -598,7 +751,8 @@ position: relative;
     }
 
     .picture {
-        max-width: 50%
+       width: 100%;
+
     }
 
     .picture img {
@@ -607,22 +761,210 @@ position: relative;
     }
 
     .txt {
-        width: 37vw;
+        width: 100%;
         height: 25vw;
         background-color: #00b9ea;
         opacity: .98;
         color: white;
         padding: 2vw;
-        transform: translateX(-10em);
-        position: relative;
-        top: 17vw;
-        z-index: 3;
+        transform: translateX();
+
+    }
+
+    /*.billedeboks_wrapper{
+        width: 75%;
+        height: 30vw;
+        padding: 5vw;
+
+    }*/
+
+
+    .brug_for{
+        margin: 10vw;
+    }
+
+    .boksewrapper{
+        margin: 10vw;
+        margin-top: -3vw;
+        margin-bottom: 70vw;
+    }
+
+    .boksewrapper2{
+        margin: 10vw;
+    }
+
+
+    .overskrift1{
+        margin: 10vw;
+
+    }
+
+    .de_dyre_wrapper{
+        margin: 6vw;
+        height: 104vw;
+        margin-top: -0.5vw;
+    }
+
+    .talboks{
+        margin-top: 2vw;
+        font-size: 200%
+    }
+
+    #cirkeldiagram{
+      margin-top: 4vw;
+    }
+
+    .overskrift2{
+        margin: 10vw;
+        margin-top: -8vw;
+        margin-bottom: 10vw;
+
+    }
+
+    #sectionwrapper{
+        margin: 10vw;
+    }
+
+    .container2{
+        margin: 10vw;
+        margin-top: -10vw;
+    }
+
+    .bokstildemo {
+    margin-top: 0.25vw;
+    margin-left: -1.4vw;
+
+}
+
+
+.bokstilyears {
+    margin-top: 0.3vw;
+    margin-left: -1.4vw;
+    height: 24.5px;
+
+
+}
+    .some{
+        margin-left: 16vw;
     }
 
 }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
+
+    .billedeboks_wrapper {
+        height: 15vw;
+        width: 60%;
+    }
+
+    .boksewrapper {
+
+    }
+
+    .picture {
+       width: 100%;
+
+    }
+
+    .picture img {
+        width: 100%;
+
+    }
+
+    .txt {
+        width: 100%;
+        height: 30vw;
+        background-color: #00b9ea;
+        opacity: .98;
+        color: white;
+        padding: 2vw;
+        transform: translateX();
+
+    }
+
+    /*.billedeboks_wrapper{
+        width: 75%;
+        height: 30vw;
+        padding: 5vw;
+
+    }*/
+
+
+    .brug_for{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    .boksewrapper{
+        margin: 10vw;
+        margin-top: -3vw;
+        margin-bottom: 70vw;
+    }
+
+    .boksewrapper2{
+        margin-left: 15vw;
+        margin-right: 15vw;
+
+    }
+
+
+    .overskrift1{
+        margin-left: 15vw;
+        margin-right: 15vw;
+
+    }
+
+    .de_dyre_wrapper{
+        margin: 11vw;
+        height: 90vw;
+        margin-top: -0.5vw;
+    }
+
+    .talboks{
+        margin-top: -0.1vw;
+        font-size: 350%
+    }
+
+    #cirkeldiagram{
+      margin-top: 4vw;
+    }
+
+    .overskrift2{
+        margin-left: 15vw;
+        margin-right: 15vw;
+        margin-top: -8vw;
+        margin-bottom: 10vw;
+
+    }
+
+    #sectionwrapper{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    .container2{
+        margin-left: 15vw;
+        margin-right: 15vw;
+
+    }
+
+    .bokstildemo {
+    margin-top: 0.25vw;
+    margin-left: -1.2vw;
+        height: 25px;
+
+
+}
+
+
+.bokstilyears {
+    margin-top: 0.2vw;
+    margin-left: -1.2vw;
+    height: 24.5px;
+
+
+}
 
     .boksewrapper {
         height: 35vw;
@@ -682,4 +1024,206 @@ position: relative;
         color: white;
         margin: auto;
     }
+
+    #map svg {
+    width: 70vw;
+}
+    .some{
+        margin-left: 24vw;
+    }
+
+}
+
+@media screen and (min-width: 1536px){
+    header{
+        height: 80px;
+    }
+
+    .splash-container{
+        margin-top: 100px;
+    }
+
+     .billedeboks_wrapper {
+        height: 10vw;
+        width: 55%;
+    }
+
+    .boksewrapper {
+
+    }
+
+    .picture {
+       width: 100%;
+
+    }
+
+    .picture img {
+        width: 100%;
+
+    }
+
+    .txt {
+        width: 100%;
+        height: 30vw;
+        background-color: #00b9ea;
+        opacity: .98;
+        color: white;
+        padding: 2vw;
+        transform: translateX();
+
+    }
+
+    /*.billedeboks_wrapper{
+        width: 75%;
+        height: 30vw;
+        padding: 5vw;
+
+    }*/
+
+
+    .brug_for{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+    }
+
+    .boksewrapper{
+        margin: 10vw;
+        margin-top: -3vw;
+        margin-bottom: 70vw;
+    }
+
+    .boksewrapper2{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+
+    }
+
+
+    .overskrift1{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+
+    }
+
+    .de_dyre_wrapper{
+        margin: 13.7vw;
+        height: 75vw;
+        margin-top: -0.5vw;
+    }
+
+    .talboks{
+        margin-top: 0.3vw;
+        font-size: 500%
+    }
+
+    #cirkeldiagram{
+      margin-top: 4vw;
+    }
+
+    .overskrift2{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+        margin-top: -8vw;
+        margin-bottom: 10vw;
+
+    }
+
+    #sectionwrapper{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+    }
+
+    .container2{
+        margin-left: 17.6vw;
+        margin-right: 17.6vw;
+
+    }
+
+    .bokstildemo {
+    margin-top: 0.16vw;
+    margin-left: -1.2vw;
+        height: 25.5px;
+
+
+}
+
+
+.bokstilyears {
+    margin-top: 0.14vw;
+    margin-left: -1.2vw;
+    height: 25px;
+
+
+}
+
+    .boksewrapper {
+        height: 35vw;
+        margin-left: 14vw;
+    }
+
+    .picture {
+        max-width: 40%
+    }
+
+    .picture img {
+        width: 100%;
+
+    }
+
+    .txt {
+        width: 37vw;
+        height: 15vw;
+        background-color: #00b9ea;
+        opacity: .98;
+        color: white;
+        padding: 2vw;
+        transform: translateX(-10em);
+        position: relative;
+        top: 17vw;
+        z-index: 3;
+    }
+
+
+    .boksewrapper2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 4vw;
+        max-width: 70%;
+
+    }
+
+
+    .iframe-container {
+        max-width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .iframe-container iframe {
+        width: 100% position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+    .txt2 {
+        width: 100%;
+        background-color: #00b9ea;
+        opacity: .98;
+        color: white;
+        margin: auto;
+    }
+
+    #map svg {
+    width: 70vw;
+}
+    .some{
+        margin-left: 33vw;
+    }
+
+    #yearsdemo, #demo{
+        padding: 0.3vw;
+    }
+
 }
