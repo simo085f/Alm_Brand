@@ -103,6 +103,14 @@
 
 
                 <p>(Kilde: Finans Danmark, Unge, gæld & opsparing, 2018*)</p>
+
+
+                <div id="cirkeldiagram">
+                    <div class="talboks">
+                        <p>23.329</p>
+                    </div>
+                </div>
+
             </div>
         </section>
     </section>
@@ -112,90 +120,96 @@
 
         <p>Ung+ konceptet har en række rente- og gebyrfordele, som kan ses på <a class="link" href="https://www.almbrand.dk/produkter/familie-og-fritid/ung-oekonomi/">almbrand.dk</a>. For at du kan ansøge om Ung+ forbrugslån, skal du kunne opfylde følgende krav: </p>
         <ul>
-                <li>Du er mellem 18-32 år</li>
-                <li>Du har bank hos Alm. Brand og er tilmeldt Ung+ konceptet</li>
-                <li>Du er ikke opskrevet i RKI registeret</li>
-                <li>Du har minimum 5.500 kr./md. i rådighedsbeløb efter alle udgifter er betalt (mad ikke inkluderet i ”alle udgifter”)</li>
-                <li>Du skal have en kreditgodkendelse fra vores rådgiver. Har du kviklån i forvejen mindskes chancen for at blive godkendt. Kreditgodkendelsen får du efter en personlig samtale med en af vores rådgivere. Udfyld skemaet nedenunder, så kontakter vores rådgiver dig</li>
+            <li>Du er mellem 18-32 år</li>
+            <li>Du har bank hos Alm. Brand og er tilmeldt Ung+ konceptet</li>
+            <li>Du er ikke opskrevet i RKI registeret</li>
+            <li>Du har minimum 5.500 kr./md. i rådighedsbeløb efter alle udgifter er betalt (mad ikke inkluderet i ”alle udgifter”)</li>
+            <li>Du skal have en kreditgodkendelse fra vores rådgiver. Har du kviklån i forvejen mindskes chancen for at blive godkendt. Kreditgodkendelsen får du efter en personlig samtale med en af vores rådgivere. Udfyld skemaet nedenunder, så kontakter vores rådgiver dig</li>
         </ul>
 
     </section>
 
-<!--Låneansøgning-->
+    <!--Låneansøgning-->
 
-       <section class="sectionwrapper">
+    <section class="sectionwrapper">
         <h1>Ansøg om Ung+ forbrugslån</h1>
         <form oninput="x.value=parseInt(Math.round(myRange.value)/parseInt(years.value)/12)">
             <section class="sliders1">
 
-               <p>Hvor meget vil du låne?</p>
+                <p>Hvor meget vil du låne?</p>
                 <section class="slidernr1">
                     <input type="range" min="5000" max="100000" class="slider1" id="myRange" step="1000" value="50000">
                     <div class="bokstildemo">
-                    <div id="demo"></div>
+                        <div id="demo"></div>
                     </div>
                 </section>
             </section>
 
-                <section class="sliders2">
+            <section class="sliders2">
                 <p>Over hvor lang tid vil du tilbagebetale?</p>
                 <section class="slidernr2">
                     <input type="range" class="slider2" id="years" min="1" max="20" value="10">
                     <div class="bokstilyears">
-                    <div id="yearsdemo"></div>
+                        <div id="yearsdemo"></div>
                     </div>
                 </section>
 
             </section>
             <!--UDREGNING-->
             <section class="udregning">
-            <p>Du skal tilbagebetale</p>
-            <output name="x" for="myRange years"></output> kr. om måneden.
-            <p>Du vil blive ringet op af en af vores dygtige rådgivere inden for 1-2 hverdage.</p>
+                <p>Du skal tilbagebetale</p>
+                <output name="x" for="myRange years"></output> kr. om måneden.
+                <p>Du vil blive ringet op af en af vores dygtige rådgivere inden for 1-2 hverdage.</p>
             </section>
         </form>
     </section>
 
-<div class="container2">
- <h2>Indtast dit navn og nummer, så kontakter vi dig</h2>
-  <form action="#">
-    <div class="row">
-      <div class="navn">
-        <label for="fnavn">Fornavn</label>
-      </div>
-      <div class="ph">
-        <input type="text" id="fnavn" name="fornavn" placeholder="Dit fornavn...">
-      </div>
+    <div class="container2">
+        <h2>Indtast dit navn og nummer, så kontakter vi dig</h2>
+        <form action="#">
+            <div class="row">
+                <div class="navn">
+                    <label for="fnavn">Fornavn</label>
+                </div>
+                <div class="ph">
+                    <input type="text" id="fnavn" name="fornavn" placeholder="Dit fornavn...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="navn">
+                    <label for="enavn">Efternavn</label>
+                </div>
+                <div class="ph">
+                    <input type="text" id="enavn" name="efternavn" placeholder="Dit efternavn...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="navn">
+                    <label for="mobil">Mobil nr</label>
+                </div>
+                <div class="ph">
+                    <input type="text" id="mobil" name="mobilnr" placeholder="Indtast dit mobil nummer...">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Send ansøgning">
+            </div>
+        </form>
     </div>
-    <div class="row">
-      <div class="navn">
-        <label for="enavn">Efternavn</label>
-      </div>
-      <div class="ph">
-        <input type="text" id="enavn" name="efternavn" placeholder="Dit efternavn...">
-      </div>
-    </div>
-    <div class="row">
-      <div class="navn">
-        <label for="mobil">Mobil nr</label>
-      </div>
-      <div class="ph">
-        <input type="text" id="mobil" name="mobilnr" placeholder="Indtast dit mobil nummer...">
-      </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Send ansøgning">
-    </div>
-  </form>
-</div>
 
 
     <footer></footer>
 
 </body>
 <script>
+    let myForm = document.querySelector(".sectionwrapper form");
     //    Javascript til burgermenuen
     function onLoad() {
+
+        console.log(myForm);
+        myForm.addEventListener("input", () => {
+            // x.value=parseInt(myRange.value)/parseInt(years.value)/12
+        });
 
         // if (window.innerWidth <= 768) {
 
@@ -225,24 +239,36 @@
         document.querySelector("#map").innerHTML = svg;
     }
 
+
+    document.addEventListener("DOMContentLoaded", function() {
+        startSvg();
+    });
+    async function startSvg() {
+        //load svg//
+        let mySvg = await fetch("cirkeldiagram1.svg");
+        let svg = await mySvg.text();
+
+        document.querySelector("#cirkeldiagram").innerHTML += svg;
+        document.querySelector("#cirkeldiagram .talboks").style.zIndex = "100";
+    }
+
     // Låneansøgning show text //
 
     var slider1 = document.getElementById("myRange");
-        var output = document.getElementById("demo");
-        output.innerHTML = slider1.value + " kr.";
+    var output = document.getElementById("demo");
+    output.innerHTML = slider1.value + " kr.";
 
-        slider1.oninput = function() {
-            output.innerHTML = this.value + " kr.";
-        }
+    slider1.oninput = function() {
+        output.innerHTML = this.value + " kr.";
+    }
 
-        var slider2 = document.getElementById("years");
-        var output2 = document.getElementById("yearsdemo");
-        output2.innerHTML = slider2.value + " år";
+    var slider2 = document.getElementById("years");
+    var output2 = document.getElementById("yearsdemo");
+    output2.innerHTML = slider2.value + " år";
 
-        slider2.oninput = function() {
-            output2.innerHTML = this.value + " år";
-        }
-
+    slider2.oninput = function() {
+        output2.innerHTML = this.value + " år";
+    }
 </script>
 
 
